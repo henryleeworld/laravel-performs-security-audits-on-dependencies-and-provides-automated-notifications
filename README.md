@@ -1,4 +1,4 @@
-# Laravel 11 對依賴套件執行安全稽核並提供自動通知
+# Laravel 12 對依賴套件執行安全稽核並提供自動通知
 
 引入 dgtlss 的 warden 套件來擴增對依賴套件執行安全稽核並提供自動通知，管理員就可以在偵測到使用已知安全漏洞的依賴套件時，收到電子郵件通知。
 
@@ -24,11 +24,8 @@ $ php artisan warden:audit {--silent}
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/jT8zjca.png)
-> 執行安全稽核確認 Larvel 11 版本低於 11.31.0，則會顯示注入安全漏洞警告
+![](https://i.imgur.com/2MDvibf.png)
+> 執行依賴項目、環境設定檔、儲存權限和設定檔安全稽核確認
 
-![](https://i.imgur.com/pST3EL7.png)
-> 設定的電子郵件會有注入安全漏洞通知
-
-![](https://i.imgur.com/S6iDOmP.png)
-> Larvel 11 版本更新到 11.31.0 以上，再執行安全稽核則顯示無安全漏洞警告
+![](https://i.imgur.com/63zQ6u7.png)
+> 設定的電子郵件會有安全稽核信件通知
